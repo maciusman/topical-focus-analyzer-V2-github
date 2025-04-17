@@ -147,5 +147,3 @@ These optional settings allow fine-tuning:
     *   `llm_summarizer.py`: Generates AI summary using Google Gemini (optional).
 
 ---
-
- 
