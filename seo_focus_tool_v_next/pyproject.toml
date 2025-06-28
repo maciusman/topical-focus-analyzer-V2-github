@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "seo-focus-tool-v-next"
+version = "0.1.0"
+description = "SEO tool for analyzing Site Focus Score and Site Radius Score using Jina AI and Qdrant."
+authors = ["Jules Agent <ai.agent@example.com>"]
+readme = "README.md"
+packages = [{include = "app", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.110.0"}
+httpx = "^0.27.0"
+python-dotenv = "^1.0.1"
+streamlit = "^1.32.2"
+qdrant-client = "^1.8.2" # Added from Module 2
+trafilatura = "^1.8.0" # Added from Module 3
+# openai needed for Jina Embeddings and OpenRouter
+openai = "^1.16.2" # Added from Module 3 (Jina) & Module 5 (OpenRouter)
+scikit-learn = "^1.4.1" # Added from Module 4
+umap-learn = "^0.5.5" # Added from Module 4
+plotly = "^5.19.0" # Added from Module 4
+pytest = "^8.1.1" # Added from Part 3
+pytest-asyncio = "^0.23.6" # Added from Part 3
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
